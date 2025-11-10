@@ -1,0 +1,8 @@
+[
+{
+  "directory": "E:/Wild/Cheats/FreeFire/bst/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -Dbst_EXPORTS -IE:/Wild/Cheats/FreeFire/bst/include -g -std=gnu++23 -o CMakeFiles\\bst.dir\\main.cpp.obj -c E:\\Wild\\Cheats\\FreeFire\\bst\\main.cpp",
+  "file": "E:/Wild/Cheats/FreeFire/bst/main.cpp",
+  "output": "E:/Wild/Cheats/FreeFire/bst/build/CMakeFiles/bst.dir/main.cpp.obj"
+}
+]
