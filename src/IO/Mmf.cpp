@@ -51,5 +51,4 @@ namespace MemVM::IO {
         m_Handle = nullptr;
         m_Valid = false;
     }
-
 }
