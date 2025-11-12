@@ -1,6 +1,10 @@
 #pragma once
 #include <cstdint>
 
+#ifdef ERROR
+#undef ERROR
+#endif
+
 namespace MemVM::IO {
 
     constexpr size_t MAX_CHANNELS = 16;
@@ -20,7 +24,7 @@ namespace MemVM::IO {
         IDLE = 0,
         BUSY = 1,
         SUCCESS = 2,
-        ERROR = 3
+        FAILED = 3
     };
 
     enum class Error : uint8_t {
