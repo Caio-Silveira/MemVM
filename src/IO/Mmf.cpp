@@ -1,5 +1,5 @@
-#include "Mmf.h"
-#include "Mmf_Manage.h"
+#include "IO/Mmf.h"
+#include "IO/Mmf_Manage.h"
 #include <windows.h>
 
 namespace MemVM::IO {
@@ -32,17 +32,13 @@ namespace MemVM::IO {
             return;
         }
         
-        if (m_Block) {
-            InitializeBlock(m_Block);
-        }
+        InitializeBlock(m_Block);
         
         m_Valid = (m_Block != nullptr);
     }
 
     Mmf::~Mmf() {
         if (!m_Block) return;
-        
-        constexpr size_t SIZE = sizeof(SharedMemoryBlock);
         
         UnmapViewOfFile(m_Block);
         if (m_Handle) CloseHandle(m_Handle);
