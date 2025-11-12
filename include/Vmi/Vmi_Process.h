@@ -1,7 +1,7 @@
 #pragma once
 #include "Vmi_Types.h"
 #include "Vmi_Hook.h"
-#include "Mmf_Types.h"
+#include "IO/Mmf_Types.h"
 
 namespace MemVM::Vmi {
 
