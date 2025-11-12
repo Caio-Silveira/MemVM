@@ -54,7 +54,7 @@ build CMakeFiles/bst.dir/main.cpp.obj: CXX_COMPILER__bst_unscanned_Debug E$:/Wil
   DEFINES = -Dbst_EXPORTS
   DEP_FILE = CMakeFiles\bst.dir\main.cpp.obj.d
   FLAGS = -g -std=gnu++23
-  INCLUDES = -IE:/Wild/Cheats/FreeFire/bst/include
+  INCLUDES = -IE:/Wild/Cheats/FreeFire/bst/include -IE:/Wild/Cheats/FreeFire/bst/libs/minhook/include
   OBJECT_DIR = CMakeFiles\bst.dir
   OBJECT_FILE_DIR = CMakeFiles\bst.dir
   TARGET_SUPPORT_DIR = CMakeFiles\bst.dir

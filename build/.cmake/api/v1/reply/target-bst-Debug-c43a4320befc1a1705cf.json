@@ -67,6 +67,10 @@
 				{
 					"backtrace" : 2,
 					"path" : "E:/Wild/Cheats/FreeFire/bst/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "E:/Wild/Cheats/FreeFire/bst/libs/minhook/include"
 				}
 			],
 			"language" : "CXX",
