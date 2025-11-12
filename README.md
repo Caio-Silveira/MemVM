@@ -1,5 +1,3 @@
-# 📝 README.md - Versão Minimalista Profissional
-
 # MemVM
 
 High-performance memory access layer for VirtualBox-based VMs through shared memory communication.
