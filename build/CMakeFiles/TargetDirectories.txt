@@ -1,3 +1,0 @@
-E:/Wild/Cheats/FreeFire/bst/build/CMakeFiles/bst.dir
-E:/Wild/Cheats/FreeFire/bst/build/CMakeFiles/edit_cache.dir
-E:/Wild/Cheats/FreeFire/bst/build/CMakeFiles/rebuild_cache.dir
