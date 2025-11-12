@@ -14,7 +14,7 @@ namespace MemVM::IO {
         channel.command = Command::NONE;
         channel.error = err;
         channel.payloadSize = 0;
-        SetStatus(channel, Status::ERROR);
+        SetStatus(channel, Status::FAILED);
     }
 
     inline bool Write(Channel& channel, const uint8_t* data, size_t size) noexcept {
