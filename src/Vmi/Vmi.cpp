@@ -4,6 +4,7 @@
 #include "IO/Mmf_Read.h"
 #include "IO/Mmf_Write.h"
 #include <windows.h>
+#include <cstdlib>
 
 namespace MemVM::Vmi {
 

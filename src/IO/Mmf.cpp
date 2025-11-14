@@ -1,7 +1,7 @@
 #include "IO/Mmf.h"
 #include "IO/Mmf_Manage.h"
 #include <windows.h>
-
+#include <cstdlib>
 namespace MemVM::IO {
 
     Mmf::Mmf(const char* name)
