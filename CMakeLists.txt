@@ -52,7 +52,6 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
         -fno-stack-protector
         -ffunction-sections
         -fdata-sections
-        -ffreestanding              # CRT min
     )
 
     target_link_options(MemVM PRIVATE
