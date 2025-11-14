@@ -50,13 +50,12 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
         -fno-exceptions
         -fno-rtti
         -fno-stack-protector
-        -fomit-frame-pointer
         -ffunction-sections
         -fdata-sections
+        -ffreestanding              # CRT min
     )
-    
+
     target_link_options(MemVM PRIVATE
-        -nostdlib                    # SEM CRT
         -static-libgcc
         -static-libstdc++
         -Wl,--gc-sections
@@ -64,11 +63,15 @@ if(CMAKE_CXX_COMPILER_ID MATCHES "GNU|Clang")
         -Wl,--entry=DllMain
         -s
     )
-    
+
     target_link_libraries(MemVM PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}/libs/minhook/lib/libMinHook.a
+        mingw32 
+        gcc                         # runtime min
         kernel32
     )
 endif()
+
 
 set_target_properties(MemVM PROPERTIES
     OUTPUT_NAME "MemVM"
